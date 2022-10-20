@@ -9,7 +9,9 @@ namespace BenchmarkTool
         public const string PostgresConnection = "PostgresConnection";
         public const string TimescaleConnection = "TimescaleConnection";
         public const string MySQLConnection = "MySQLConnection";
-
+        public const string AQueryPath = "AQueryPath";
+        public const string AQueryCMD = "AQueryCMD";
+        public const string AQueryArgs = "AQueryArgs";
         public const string TargetDatabase = "TargetDatabase";
         public const string BatchSize = "BatchSize";
         public const string ClientNumber = "ClientNumber";

@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS sensor_data (
+    time timestamp,
+    sensor_id integer,
+    value double
+);

@@ -48,6 +48,29 @@ namespace BenchmarkTool
             return val;
         }
 
+        public static string GetAQueryCMD()
+        {
+            var val = ConfigurationManager.AppSettings[ConfigurationKeys.AQueryCMD];
+            if (String.IsNullOrEmpty(val))
+                throw new Exception(String.Format("Null or empty app settings val for key={0}", ConfigurationKeys.PostgresConnection));
+            return val;
+        }
+
+        public static string GetAQueryArgs()
+        {
+            var val = ConfigurationManager.AppSettings[ConfigurationKeys.AQueryArgs];
+            if (String.IsNullOrEmpty(val))
+                val = "";
+            return val;
+        }
+
+        public static string GetAQueryPath()
+        {
+            var val = ConfigurationManager.AppSettings[ConfigurationKeys.AQueryPath];
+            if (String.IsNullOrEmpty(val))
+                throw new Exception(String.Format("Null or empty app settings val for key={0}", ConfigurationKeys.PostgresConnection));
+            return val;
+        }
         public static string GetTimescaleConnection()
         {
             var val = ConfigurationManager.AppSettings[ConfigurationKeys.TimescaleConnection];
